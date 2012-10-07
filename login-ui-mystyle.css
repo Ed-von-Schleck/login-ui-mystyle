@@ -1,0 +1,161 @@
+
+#login-dropdown-list {
+  font-size: larger;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  border: 3px solid #eeeeee;
+  padding: 20px 20px 60px 20px;
+  box-shadow: 0 0 2px black, inset 0 1px 2px #aaaaaa, 2px 2px 6px gray;
+  border-radius: 15px;
+  border-top-right-radius: 2px;
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%);
+  background: -o-linear-gradient(top, #e5e5e5 0%,#ffffff 100%);
+  background: -ms-linear-gradient(top, #e5e5e5 0%,#ffffff 100%);
+  background: linear-gradient(to bottom, #e5e5e5 0%,#ffffff 100%);
+  font-family: sans-serif;
+}
+
+#login-buttons a:hover, .login-button-form-submit:hover, #login-dropdown-list label:hover {
+
+  cursor: pointer;
+}
+
+#login-dropdown-list input {
+  border: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  outline: none;
+  color: gray;
+  display: inline-block;
+  width: 75%;
+  margin-left: 25%;
+  height: 20px;
+
+}
+
+#login-dropdown-list label {
+  position: absolute;
+  text-shadow: white 1px 1px 1px;
+  horizontal-align: bottom;
+  border-bottom: 2px solid gray;
+  width: 25%;
+}
+
+#login-dropdown-list label:hover {
+  color: gray;
+}
+
+a.login-close-text {
+  padding: 1px 5px 4px 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #eeeeee;
+  box-shadow: -1px 2px 2px -1px #aaaaaa;
+  border-bottom-left-radius: 2px;
+  font-size: small;
+  color: #808080;
+}
+
+a.login-close-text:hover {
+  color: black;
+  text-shadow: white 1px 1px 1px;
+}
+
+#login-dropdown-list:before {
+  content: "Sign in";
+  display: block;
+  font-size: 3em;
+  font-family: serif;
+  margin-bottom: 12px;
+  color: gray;
+  text-shadow: white 1px 1px 2px:
+}
+
+.login-button-form-submit {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  padding: 10px;
+  font-weight: bold;
+  border-top: 3px solid #eeeeee;
+  border-left: 3px solid #eeeeee;
+  box-shadow: inset 2px 2px 6px gray, -3px -2px 3px -3px #aaaaaa, 8px 8px 6px white;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 1;
+  background: -moz-linear-gradient(top, #a9db80 0%, #96c56f 100%);
+  background: -webkit-linear-gradient(top, #a9db80 0%,#96c56f 100%);
+  background: -o-linear-gradient(top, #a9db80 0%,#96c56f 100%);
+  background: -ms-linear-gradient(top, #a9db80 0%,#96c56f 100%);
+  background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%);
+  color: white;
+  text-shadow: black 1px 1px 2px;
+  font-size: larger;
+}
+
+.login-button-form-submit:after {
+  content: "→";
+  z-index: -1;
+}
+
+.login-button-form-submit:hover {
+  -webkit-transition-property: padding, box-shadow;
+  -moz-transition-property: padding, box-shadow;
+  transition-property: padding, box-shadow;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  padding: 15px 20px;
+  box-shadow: inset 1px 1px 3px gray, -3px -2px 3px -3px #aaaaaa, 8px 8px 6px white;
+}
+
+.additional-link-container {
+  clear: left;
+  font-size: medium;
+}
+
+.additional-link-container a {
+  border-bottom: 2px solid transparent;
+}
+
+.additional-link-container a:hover {
+  border-bottom: 2px solid gray;
+}
+
+#signup-link:before {
+  content: "New here? ";
+  font-weight: bold;
+}
+
+#forgot-password-link:before {
+  content: "Oops ... ";
+  font-weight: bold;
+}
+
+#login-dropdown-list .error-message {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: medium;
+  margin: 0 0 5px 0;
+  background: -moz-linear-gradient(top, #ff1a00 0%, #ff1a00 100%);
+  background: -webkit-linear-gradient(top, #ff1a00 0%,#ff1a00 100%);
+  background: -o-linear-gradient(top, #ff1a00 0%,#ff1a00 100%);
+  background: -ms-linear-gradient(top, #ff1a00 0%,#ff1a00 100%);
+  background: linear-gradient(to bottom, #ff1a00 0%,#ff1a00 100%);
+  color: white;
+}
+
+#login-dropdown-list .error-message:before {
+  content: "⚠ ";
+}
+
